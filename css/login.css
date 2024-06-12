@@ -5,11 +5,21 @@ body{
   height: 100vh;
 }
 
+.centralized {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Defina a largura desejada */
+  height: 250px; /* Defina a altura desejada, se necessário */
+  background-color: rgba(0, 0, 0, 0.753); /* Apenas para visualização */
+  padding: 20px;
+  border-radius: 20px;
+}
 
 .login-form {
     align-items: center;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
   }
@@ -46,8 +56,8 @@ body{
   }
   
   .login__button {
-    background-color: #00b5cc;
-    border: 3px solid #b2df28;
+    background-color: red;
+    border: 3px solid black;
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
