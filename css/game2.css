@@ -33,18 +33,19 @@ main > * {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
     font-size: 1.2em;
     width: 100%;
     max-width: 800px;
     padding: 30px;
     margin: 0 0 30px;
-    border-radius: 5px;
+    border-radius: 20px;
   }
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 15px;
     width: 100%;
     max-width: 1200px;
@@ -103,4 +104,51 @@ main > * {
     background-repeat: no-repeat;
   }
   
-  
+  .botao-voltar{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 120px;
+    height: 40px;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
+.botao-atualizar{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 160px;
+  height: 50px;
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+
+.botao-modos{
+  position: fixed;
+  bottom: 30px;
+  right: 230px;
+  width: 160px;
+  height: 50px;
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+
+.botao-atualizar:hover, .botao-modos:hover, #botao-voltar:hover{
+  background-color: rgba(255, 0, 0, 0.473);
+}

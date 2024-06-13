@@ -11,10 +11,6 @@ const characters = [
     'foto_elefante',
     'foto_gato',
     'foto_jacare',
-    'foto_macaco',
-    'foto_peixe',
-    'foto_sapo',
-    'foto_vaca',
     'sinal_barata',
     'sinal_boi',
     'sinal_cachorro',
@@ -23,10 +19,6 @@ const characters = [
     'sinal_elefante',
     'sinal_gato',
     'sinal_jacare',
-    'sinal_macaco',
-    'sinal_peixe',
-    'sinal_sapo',
-    'sinal_vaca',
 ];
 
 const validPairs = {
@@ -42,14 +34,6 @@ const validPairs = {
   'sinal_gato': 'foto_gato',
   'foto_jacare': 'sinal_jacare',
   'sinal_jacare': 'foto_jacare',
-  'foto_macaco': 'sinal_macaco',
-  'sinal_macaco': 'foto_macaco',
-  'foto_peixe': 'sinal_peixe',
-  'sinal_peixe': 'foto_peixe',
-  'foto_sapo': 'sinal_sapo',
-  'sinal_sapo': 'foto_sapo',
-  'foto_vaca': 'sinal_vaca',
-  'sinal_vaca': 'foto_vaca',
   'foto_boi': 'sinal_boi',
   'sinal_boi': 'foto_boi',
   'foto_cavalo': 'sinal_cavalo',
@@ -68,7 +52,7 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
   
-    if (disabledCards.length === 24) {
+    if (disabledCards.length === 16) {
       clearInterval(this.loop);
       setTimeout(() => {
         alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}`);
