@@ -59,7 +59,7 @@ a{
     place-items: center;
 }
 
-#botao-voltar:hover, .botao-modos:hover{
+#botao-voltar:hover, #botao-modos:hover{
     background-color: rgba(255, 0, 0, 0.473);
 }
 
@@ -76,7 +76,7 @@ p{
     font-size: 1.7em;
 }
 
-.botao-modos{
+#botao-modos{
     position: fixed;
     bottom: 30px;
     right: 30px;
